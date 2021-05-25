@@ -9,7 +9,7 @@ defmodule Rumbl.MixProject do
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
-      elixir: "~> 1.7",
+      elixir: "~> 1.12.0",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -37,10 +37,10 @@ defmodule Rumbl.MixProject do
   defp deps do
     [
       {:phoenix_pubsub, "~> 2.0"},
-      {:ecto_sql, "~> 3.4"},
+      {:ecto_sql, "~> 3.6.1"},
       {:postgrex, ">= 0.0.0"},
-      {:jason, "~> 1.0"},
-      {:pbkdf2_elixir, "~> 1.0"}
+      {:jason, "~> 1.2.2"},
+      {:pbkdf2_elixir, "~> 1.4.0"}
     ]
   end
 

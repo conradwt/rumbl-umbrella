@@ -9,7 +9,7 @@ defmodule RumblWeb.MixProject do
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
-      elixir: "~> 1.7",
+      elixir: "~> 1.12.0",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -37,17 +37,17 @@ defmodule RumblWeb.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.5.8"},
-      {:phoenix_ecto, "~> 4.0"},
-      {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_dashboard, "~> 0.4"},
-      {:telemetry_metrics, "~> 0.4"},
-      {:telemetry_poller, "~> 0.4"},
-      {:gettext, "~> 0.11"},
+      {:phoenix, "~> 1.5.9"},
+      {:phoenix_ecto, "~> 4.2.1"},
+      {:phoenix_html, "~> 2.14.3"},
+      {:phoenix_live_reload, "~> 1.3.1", only: :dev},
+      {:phoenix_live_dashboard, "~> 0.4.0"},
+      {:telemetry_metrics, "~> 0.6.0"},
+      {:telemetry_poller, "~> 0.5.1"},
+      {:gettext, "~> 0.18.2"},
       {:rumbl, in_umbrella: true},
-      {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"},
+      {:jason, "~> 1.2.2"},
+      {:plug_cowboy, "~> 2.5.0"},
       {:info_sys, in_umbrella: true}
     ]
   end
